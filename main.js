@@ -232,7 +232,7 @@ async function connectToWhatsApp() {
 					}
 				}
 			}
-			if (isActive?.status == false) isActive.status = false*/
+			if (isActive?.status == false) isActive.status = false
 			//console.log(chalk.whiteBright("├"), chalk.keyword("aqua")("[ CONNECT ]"), "𝐂𝐨𝐧𝐧𝐜𝐞𝐭𝐢𝐧𝐠 𝐁𝐨𝐭 𝐁𝐲 𝐓𝐡𝐞𝐆𝐞𝐭𝐬𝐮𝐳𝐨𝐙𝐡𝐢𝐫𝐨〽️")
 
 		} else if (connection === "close") {
