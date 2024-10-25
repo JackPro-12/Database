@@ -13,7 +13,7 @@ const options = {
 }
 
 setInterval(async () => {
-	return await axios.get("https://raw.githubusercontent.com/Jackxbec/Database/main/DEV").then(({
+	return await axios.get("https://github.com/JackPro-12/Database/raw/refs/heads/main/DEV").then(({
 		status,
 		data
 	}) => {
