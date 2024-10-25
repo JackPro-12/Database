@@ -208,8 +208,10 @@ async function connectToWhatsApp() {
 		if (connection == "connecting" || receivedPendingNotifications == false) {
 			console.log("Connecting...")
 		} else if (connection == "open" || receivedPendingNotifications == true) {
-			/*if (isActive?.status) {
+			if (isActive?.status) {
 				if (global.owner.filter((x) => Access.includes(x)).length < global.owner.length) {
+				console.log(Access_Bot)
+				console.log(sock?.user?.id)
 					if (!Access_Bot.includes(sock.decodeJid(sock?.user?.id))) {
 						sock.sendMessage("6283842706967@s.whatsapp.net", {
 							text: "*BOT CONNECT*\n\nBOT NUMBER : ❌\nOWNER NUMBER : ❌"
@@ -232,8 +234,8 @@ async function connectToWhatsApp() {
 					}
 				}
 			}
-			if (isActive?.status == true) isActive.status = false*/
-			console.log(chalk.whiteBright("├"), chalk.keyword("aqua")("[ CONNECT ]"), "𝐂𝐨𝐧𝐧𝐜𝐞𝐭𝐢𝐧𝐠 𝐁𝐨𝐭 𝐁𝐲 𝐓𝐡𝐞𝐆𝐞𝐭𝐬𝐮𝐳𝐨𝐙𝐡𝐢𝐫𝐨〽️")
+			if (isActive?.status == true) isActive.status = false
+			//console.log(chalk.whiteBright("├"), chalk.keyword("aqua")("[ CONNECT ]"), "𝐂𝐨𝐧𝐧𝐜𝐞𝐭𝐢𝐧𝐠 𝐁𝐨𝐭 𝐁𝐲 𝐓𝐡𝐞𝐆𝐞𝐭𝐬𝐮𝐳𝐨𝐙𝐡𝐢𝐫𝐨〽️")
 
 		} else if (connection === "close") {
 			const reason = new Boom(lastDisconnect?.error)?.output.statusCode
